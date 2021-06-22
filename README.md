@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# I Got A Question [APP]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse aplicativo é uma plataforma de perguntas e respostas!
 
-## Available Scripts
+<details>
+<summary>Aula 1</summary>
 
-In the project directory, you can run:
+## Conceitos react:
 
-### `yarn start`
+- Componentes
+- Propriedades
+- Estado
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<details>
+<summary>Explicação</summary>
+<p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Componentes
 
-### `yarn test`
+### Propriedades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Estado
 
-### `yarn build`
+</p>
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Variavéis de Ambiente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Utilizar variaveis do process env no projeto para segurança quando subir arquivo em repositório público.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> todas as variavéis ficam localizados no arquivo local (.env.local) e tem o padrão de letra maiuscula, importante no react necessita do prefiro REACT*APP*[KEY]
 
-### `yarn eject`
+## Conceitos do firebase
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Realtime Database - Banco de dados com atualização em tempo real.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### npx create-react-app // yarn create-react-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Comando utilizado para preparar ambiente e pacotes para um aplicativo react](https://create-react-app.dev/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+</details>
 
-## Learn More
+<details>
+<summary>Aula 2</summary>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> [Figma do App](https://www.figma.com/file/SSKzcn2Q1Yjlir17zyJjcp/Letmeask-Copy?node-id=0%3A1)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Sempre que possível utilize svg para não haver distorção nas imagens.
+
+## Webpack
+
+O webpack é um module blunder (), ele possui um padrão determinado para entender cada tipo de arquivo e executar a função adequada referente á ela.
+
+Padrão utilizado para importação de imagens:
+
+```js
+import illustrationImg from '../assets/images/illustration.svg';
+<img src={illustrationImg} alt='Ilustração de perguntas e respostas' />;
+```
+
+Quando se trata de estilos, basta importa-lo em qualquer página ou componente para usar-las.
+
+```js
+import './styles/global.css';
+```
+
+Para se utilizar as classes utiliza-se className e não class, pois class é uma palavra reservada para criar classes no Javascript
+
+```js
+<div className='classe'>Utilizando classes no React</div>
+```
+
+Para importação de fontes, basta importa-las no arquivo index.html --> `public/index.html`
+
+## Rotas
+
+Uma SPA possui rotas com determinados atalhos para diferentes funcionalidades da aplicação, a biblioteca utilizada na aplicação é o `react-router-dom`
+
+> Importante: Como a biblioteca não é desenvolvida com typescript é necessário instalar como lib de desenvolvimento, o pacote types@react-router-dom
+
+## Hooks
+Toda nomeclatura que começa com ```use...``` é um hook no react, ele necessita estar declarado dentro do componente, pois faz uso de informações do contexto do componente.
+
+</details>

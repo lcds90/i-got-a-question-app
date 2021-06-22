@@ -1,0 +1,29 @@
+/* 
+    font-family: 'Benne', serif;
+    font-family: 'Raleway', sans-serif;
+*/
+
+:root {
+    --bg-color: #bbbbbb;
+    --text-color: #29292e;
+    --text-alt-color: #f8f8f8;
+    --primary-color: #835afd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 16px 'Raleway', serif;
+}
