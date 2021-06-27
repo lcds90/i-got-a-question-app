@@ -1,0 +1,109 @@
+#page-admin-room {
+    margin: 25px;
+}
+
+#page-admin-room header {
+    padding: 24px;
+    border-bottom: 5px solid #e2e2e1;
+}
+
+#page-admin-room .content {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-admin-room .content > img {
+    max-height: 45px;
+}
+
+#page-admin-room .content > div {
+    display:flex;
+    gap: 16px;
+}
+
+#page-admin-room button {
+    height: 40px;
+}
+
+#page-admin-room > section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#page-admin-room section .room-title {
+    margin: 32px 0 24px;
+    display: flex;
+    align-items: center;
+}
+
+#page-admin-room section .room-title h1 {
+    font: 400 30px 'Benne', sans-serif;
+    color: #29292e;
+}
+
+#page-admin-room section .room-title span {
+    margin-left: 16px;
+    background-color: #e559f9;
+    border-radius: 100px;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+#page-admin-room section article form textarea {
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #e2e2e1;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    resize: vertical;
+    min-height: 130px;
+}
+#page-admin-room section article form .form-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#page-admin-room section article form .form-footer > span {
+    font-size: 14px;
+    color: #29292e;
+    font-weight: 500;
+}
+
+#page-admin-room section article form .form-footer > span button {
+    background: transparent;
+    border: 0;
+    color: #e559f9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#page-admin-room section article form .form-footer .user-info {
+   display:flex;
+   align-items: center; 
+}
+
+#page-admin-room section article form .form-footer  .user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#page-admin-room section article form .form-footer .user-info > span {
+    margin-left: 10px;
+    color: #29292e;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font: 18px 'Benne', sans-serif;
+}
+
+#page-admin-room .question-list {
+    margin-top:32px;
+}

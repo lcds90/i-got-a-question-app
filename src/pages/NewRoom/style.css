@@ -1,0 +1,139 @@
+#page-auth {
+    display:flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+#page-auth aside {
+    flex: 7;
+    background: var(--primary-color);
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 80px;
+}
+
+#page-auth img {
+    max-width: 320px;
+}
+
+#page-auth strong {
+    font: 700 36px 'Raleway', serif;
+}
+
+#page-auth p {
+    font-size: 18px;
+    line-height: 10px;
+    color: #f8f8f8;
+
+}
+
+#page-auth .aside-info {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+#page-auth span {
+    font: 400 30px 'Benne', sans-serif
+}
+
+#page-auth main {
+    flex: 8;
+    padding: 0 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-auth .main-content {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    align-items: stretch;
+    text-align: center;
+}
+
+#page-auth .main-content > img {
+    align-self: center;
+}
+
+#page-auth .main-content h2 {
+    font-size: 24px;
+    margin: 60px 0 24px;
+    font: 700 30px 'Raleway', sans-serif
+}
+
+#page-auth .main-content form {}
+#page-auth .main-content form input {
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 2px solid var(--text-color);
+}
+
+#page-auth .main-content form button {
+    margin: 16px 0;
+}
+
+#page-auth .main-content form button, #page-auth .main-content form input {
+    width: 100%;
+}
+
+#page-auth .main-content p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+#page-auth .main-content .create-room {
+    margin-top: 60px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: #ea4335;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;   
+    transition: filter 0.5s ease;
+}
+
+#page-auth .main-content .create-room img {
+    margin-right: 10px;
+}
+
+#page-auth .main-content .create-room:hover {
+    filter: brightness(0.9);
+}
+
+#page-auth .main-content .separator {
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+}
+
+#page-auth .main-content .separator::before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: var(--text-color);
+    margin-right: 16px;
+}
+
+#page-auth .main-content .separator::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: var(--text-color);
+    margin-left: 16px;
+}
+
